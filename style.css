@@ -67,8 +67,12 @@ ul {
 }
 
 .hero-text {
-    width: 400px;
+    max-width: 400px;
     margin-right: auto;
+}
+
+.hero-content>* {
+    flex-shrink: 1;
 }
 
 .hero-main-text {
@@ -95,8 +99,9 @@ ul {
 }
 
 .container {
-    width: 900px;
+    max-width: 900px;
     text-align: center;
+    flex-shrink: 1;
     /* padding: 48px; */
 }
 
