@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -6,10 +11,29 @@ body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+button {
+    border: 1px solid #F9FAF8;
+    padding: 8px 24px;
+    border-radius: 6px;
+    margin-top: 12px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
+    align-items: center;
+    /* padding: 0 72px; */
 }
 
 .main {
@@ -26,27 +50,25 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16px 0;
+    width: 900px;
+}
+
+#hero-logo {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 .hero-content {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 900px;
+    padding: 120px;
 }
 
-.hero-content > * {
+.hero-text {
     width: 400px;
-    height: 200px;
-}
-
-ul {
-    display: flex;
-    gap: 16px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-right: auto;
 }
 
 .hero-main-text {
@@ -58,4 +80,75 @@ ul {
 .secondary-text {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+}
+
+.info.section {
+    padding: 50px 120px;
+}
+
+.container {
+    width: 900px;
+    text-align: center;
+    /* padding: 48px; */
+}
+
+.card-container {
+    display: flex;    
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.info.section h2 {
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 200px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+}
+
+.quote .container {
+    text-align: left;
+}
+
+.quote p {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+}
+
+.author {
+    font-weight: bold;
+    text-align: end;
+}
+
+.action .container {
+    background-color: #3882F6;
+    padding: 48px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+}
+
+.primary-text {
+    font-weight: 900px;
+    color: #F9FAF8;
+}
+
+.footer {
+    padding: 16px 0;
 }
